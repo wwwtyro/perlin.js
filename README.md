@@ -1,4 +1,4 @@
-### perlin.js
+## perlin.js
 
 A javascript 1, 2, and 3-dimensional perlin noise generator. Cobbled together
 with Sean McCullough's port of Stefan Gustavson's java implementation of perlin
