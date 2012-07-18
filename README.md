@@ -21,4 +21,6 @@ a two or one-dimensional perlin noise function, respectively. For example:
     
     value = pn.noise(x, y, z); // Varying x, y, and z will give you a 3D perlin noise function.
     
-    
+### License
+
+I don't believe in them. Do whatever you want with your bits.
