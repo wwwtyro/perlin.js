@@ -21,6 +21,14 @@ a two or one-dimensional perlin noise function, respectively. For example:
     
     value = pn.noise(x, y, z); // Varying x, y, and z will give you a 3D perlin noise function.
     
+The noise function returns a value between 0 and 1. If the noise varies too 
+rapidly in the interval you are calculating, you can scale the inputs 
+accordingly:
+
+    value = pn.noise(x/10, y/10, z/10);
+    
+This will slow the variance of the returned value by an order of magnitude.
+
 ### License
 
 I don't believe in them. Do whatever you want with your bits.

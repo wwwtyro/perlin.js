@@ -369,7 +369,7 @@ function Perlin(seed) {
     var noise = new ClassicalNoise(rand);
     
     this.noise = function (x, y, z) {
-        return noise.noise(x, y, z);
+        return 0.5 * noise.noise(x, y, z) + 0.5;
     }
     
 }
