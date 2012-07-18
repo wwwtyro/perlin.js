@@ -23,14 +23,14 @@
             function renderNext() {
                 depth += 0.025;
                 offx += 0.0;
-                offy += 1;
+                offy += 0.25;
                 for(var x = 0; x < canvas.width; x++) {
                     for(var y = 0; y < canvas.height; y++) {
                         var h = pn.noise((x+offx)/8, (y+offy)/8, depth);
                         h = Math.floor((h/2 + 0.5) * 256);
-                        var k = pn.noise((x+offx+10)/16, (y+offy+10)/16, depth);
+                        var k = pn.noise((x+offx+20)/4, (y+offy+20)/4, depth);
                         k = Math.floor((k/2 + 0.5) * 256);
-                        color = "rgba(" + h + "," + k + "," + 0 + ",1.0)";
+                        color = "rgba(" + h + "," + Math.floor(h/2) + "," + k + ",1.0)";
                         ctx.fillStyle = color;
                         ctx.fillRect(x, y, 1, 1);
                     }
